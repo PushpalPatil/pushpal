@@ -19,16 +19,16 @@ export default function About() {
                         <h1> Thanks for visiting my website :&#125; </h1>
                         <br />
                         <p className="text-sm">
-                              I'm Pushpal, and I love building cool things.
+                              I&apos;m Pushpal, and I love building cool things.
                               <br />
                               <br />
-                              What's "cool" what's "good" you may ask. Well. I'm figuring it out myself.
+                              What&apos;s &quot;cool&quot; what&apos;s &quot;good&quot; you may ask. Well. I&apos;m figuring it out myself.
                               
                               
                         </p>
                         <br />
                         <p className="text-sm">
-                              I'm a quick learner & I'm always looking to improve my skills.
+                              I&apos;m a quick learner & I&apos;m always looking to improve my skills.
                               <br />
                               <br />
                               I am currently working on a project called <a href="https://watashi-topaz.vercel.app/" className="underline" target="_blank" rel="noopener noreferrer">WATASHI</a> - a webapp that allows you to talk to your planets XD
