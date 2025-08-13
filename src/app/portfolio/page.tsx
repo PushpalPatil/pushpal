@@ -22,7 +22,14 @@ export default function Portfolio() {
                                     alt="Frame 3"
                                     className="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
                               />
-                              <span className="text-white text-sm font-mono"> WATASHI </span>
+                              <a
+                                    href="https://watashi-topaz.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-white text-sm font-mono hover:text-gray-300 transition-colors duration-200"
+                              >
+                                    WATASHI
+                              </a>
                         </div>
                   </div>
             </div>
