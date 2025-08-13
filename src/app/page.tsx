@@ -44,21 +44,41 @@ export default function Home() {
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <Header />
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1 className="text-4xl font-mono"> Pushpal </h1>
-        <p className="text-sm font-mono">
-          brb. i'm building
-        </p>
+        <div className="flex flex-row gap-2 items-center">
+          <img
+            src="/Frame 3.svg"
+            alt="Frame 3"
+            className="h-150 w-auto animate-sway will-change-transform"
+            style={{
+              animation: 'sway 3s ease-in-out infinite'
+            }}
+          />
 
-        <p className="text-sm font-mono text-center">
-          good design isn&apos;t optional.
-        </p>
+          <div className="flex flex-col gap-2">
+            <h1 className="text-4xl font-mono ">Pushpal </h1>
+            <p className="text-sm font-mono">
+              brb. i&apos;m building
+            </p>
 
+            <p className="text-sm font-mono text-center">
+              good design isn&apos;t optional.
+            </p>
+          </div>
+        </div>
       </main>
 
       {showLastLine && (
-        <div className="flex flex-col justify-center items-center mb-105">
+        <div className="flex flex-col justify-center items-center mb-96 mr-2">
           <p className="text-xs font-mono text-center">
-            {typedText}
+            {typedText.includes("good") ? (
+              <>
+                {typedText.substring(0, typedText.indexOf("good"))}
+                <em className="italic">{typedText.substring(typedText.indexOf("good"), typedText.indexOf("good") + 4)}</em>
+                {typedText.substring(typedText.indexOf("good") + 4)}
+              </>
+            ) : (
+              typedText
+            )}
             <span className="animate-blink">|</span>
           </p>
         </div>
